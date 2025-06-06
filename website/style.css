@@ -1,44 +1,72 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f2f5f9;
-    color: #333;
+:root {
+  --bg: #f2f5f9;
+  --text: #333;
+  --card-bg: #fff;
+  --primary: #283593;
 }
 
-header {
-    background: #283593;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+body.dark {
+  --bg: #121212;
+  --text: #eee;
+  --card-bg: #1e1e1e;
+  --primary: #90caf9;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background 0.3s,
+    color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: var(--primary);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .kpi-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
 .kpi-card {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    text-align: center;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.kpi-card:hover {
+  transform: translateY(-4px);
 }
 
 .kpi-value {
-    font-size: 2rem;
-    margin: 0.5rem 0;
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.chart-section {
+  padding: 2rem;
 }
 
 footer {
-    background: #283593;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+  margin-top: auto;
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
 }
