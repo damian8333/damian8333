@@ -11,4 +11,4 @@ You can click the Preview link to take a look at your changes.
 
 ## Simple HTML Website
 
-This repository now includes a very basic static website inside the `website` directory. Open `website/index.html` in your browser to see the page.
+This repository now includes a basic static website inside the `website` directory. Open `website/index.html` in your browser to see the page. It now features custom CSS styling and a small JavaScript snippet to toggle a dark mode.
