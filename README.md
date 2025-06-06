@@ -11,4 +11,4 @@ You can click the Preview link to take a look at your changes.
 
 ## Dashboard Website
 
-The repository hosts a minimal dashboard example in the `website` folder. Open `website/index.html` in your browser to view several mock KPIs styled as cards with a bit of JavaScript that randomises their values on each load.
+The repository hosts an interactive dashboard example in the `website` folder. Open `website/index.html` in your browser to see animated KPIs, a dynamic sales chart powered by Chart.js and a dark mode toggle.
