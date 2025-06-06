@@ -9,6 +9,6 @@ damian8333/damian8333 is a ✨ special ✨ repository because its `README.md` (t
 You can click the Preview link to take a look at your changes.
 --->
 
-## Simple HTML Website
+## Dashboard Website
 
-This repository now includes a basic static website inside the `website` directory. Open `website/index.html` in your browser to see the page. It now features custom CSS styling and a small JavaScript snippet to toggle a dark mode.
+The repository hosts a minimal dashboard example in the `website` folder. Open `website/index.html` in your browser to view several mock KPIs styled as cards with a bit of JavaScript that randomises their values on each load.

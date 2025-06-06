@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Advanced Website</title>
+    <title>My KPI Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Advanced Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>My Dashboard</h1>
     </header>
     <main>
-        <section id="home">
-            <h2>Welcome</h2>
-            <p>This is a more advanced HTML page with some styling and interactivity.</p>
-            <button id="mode-toggle">Toggle Dark Mode</button>
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <h2>Total Sales</h2>
+                <p id="sales" class="kpi-value">$123,456</p>
+            </div>
+            <div class="kpi-card">
+                <h2>Active Users</h2>
+                <p id="users" class="kpi-value">789</p>
+            </div>
+            <div class="kpi-card">
+                <h2>Conversion Rate</h2>
+                <p id="conversion" class="kpi-value">5.6%</p>
+            </div>
+            <div class="kpi-card">
+                <h2>Support Tickets</h2>
+                <p id="tickets" class="kpi-value">12</p>
+            </div>
         </section>
     </main>
     <footer>
-        &copy; 2024 My Advanced Website
+        &copy; 2024 My KPI Dashboard
     </footer>
     <script src="script.js"></script>
 </body>
